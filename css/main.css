@@ -1,0 +1,301 @@
+/* General styling for the site*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: white;
+}
+
+p{
+    color: gray;
+}
+h1{
+    color: black;
+}
+h2{
+    color: black;
+}
+
+/* General styling ends here*/
+
+/* Styling for the navigation bar */
+
+.name{
+    font-size: 2rem;
+    font-weight: bold;
+    color:dodgerblue;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 10%;
+    background:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.bar{
+    font-size:1.2rem;
+    color: dodgerblue;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+.bar a:hover {
+    color: dodgerblue;
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+}
+
+/* Styling for the home page*/
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-container .image{
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.main-container .image img{
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+}
+
+.main-container .content{
+    color:whitesmoke;
+    width: 40%;
+    min-height: 100px;
+}
+
+.main-container h1{
+    font-size: 2rem;
+}
+
+.section-container p{
+    text-align: center;
+    color: gray;
+}
+
+.section-container p{
+    font-weight: 600;
+}
+
+.section-container h1{
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+/* Home page styling ends here*/
+
+/* Styling for the about page*/
+.about-container{
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+}
+.about-container h3, p, li{
+    text-align: left;
+}
+
+.about-container .about-title p{
+    text-align: center;
+    color:gray;
+}
+
+.about-container .about-title h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Styling for our button*/
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: skyblue;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.download-btn:hover {
+    background: dodgerblue;
+}
+
+/* Styling for the skills page*/
+.skills-container, .contact-container {
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.skills-section h2 {
+    margin-top: 20px;
+    color: gray;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-bar {
+    width: 70%;
+    height: 10px;
+    background: lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.skill-bar div {
+    height: 100%;
+    background: dodgerblue;
+    border-radius: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: dodgerblue;
+}
+
+.social-links a {
+    margin: 10px;
+    text-decoration: none;
+    color: skyblue;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: dodgerblue;
+}
+
+/* Styling for the projects page*/
+.projects-container, .project-details {
+    margin: 100px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+.projects-container h1, .project-details h1 {
+    text-align: center;
+    color:black;
+}
+
+.project {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.details-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: skyblue;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.details-link:hover {
+    color: dodgerblue;
+}
+
+.project-details img.project-screenshot {
+    max-width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project-details a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: skyblue;
+    font-size: 1rem;
+}
+
+.project-details a:hover {
+    color: dodgerblue;
+}
+
+/* Footnote */
+body::after {
+    content: "Designed and developed by Gilbert Penaloza - 884532714";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: skyblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
